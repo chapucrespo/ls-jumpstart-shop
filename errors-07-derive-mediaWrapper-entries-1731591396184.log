@@ -1,0 +1,135 @@
+VersionMismatch: {
+  "status": 409,
+  "statusText": "Conflict",
+  "message": "",
+  "details": {},
+  "request": {
+    "url": "https://api.contentful.com/spaces/7w0ig65ffuy4/environments/feature-1/entries/amelias-core-concept-hoodie",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/3.4.7; feature space-migration; sdk contentful-management-plain.js/11.36.1; platform node.js/v16.20.2; os Windows/v16.20.2;",
+      "CF-Sequence": "302e0a75-9001-411b-b396-3a5ceafa51da",
+      "Authorization": "Bearer ...OTxTE",
+      "X-Contentful-Version": "0",
+      "X-Contentful-Content-Type": "mediaWrapper",
+      "User-Agent": "axios/1.7.7",
+      "Content-Length": "377",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put",
+    "payloadData": "{\"sys\":{\"id\":\"amelias-core-concept-hoodie\",\"version\":0,\"contentType\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"ContentType\",\"id\":\"mediaWrapper\"}}},\"fields\":{\"internalName\":{\"en-US\":\"amelias-core-concept-hoodie\"},\"title\":{\"en-US\":\"amelias-core-concept-hoodie\"},\"altText\":{\"en-US\":\"no altText\"},\"asset\":{\"en-US\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Asset\",\"id\":\"73OYdjzfQ0XMkJQDanmbON\"}}}}}"
+  },
+  "requestId": "d0dd6c53-f580-488e-b3d7-695c64ed2f02"
+}
+    at errorHandler (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-management\dist\contentful-management.node.js:18452:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RestAdapter.makeRequest (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-management\dist\contentful-management.node.js:4414:12)
+    at async Task.task (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-migration\built\bin\cli.js:189:29)
+    at async Task.run (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\listr2\dist\lib\task.js:213:21)
+    at async C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\listr2\node_modules\p-map\index.js:57:22InvalidEntry: {
+  "status": 422,
+  "statusText": "Unprocessable Entity",
+  "message": "Validation error",
+  "details": {
+    "errors": [
+      {
+        "name": "required",
+        "path": [
+          "fields",
+          "asset"
+        ],
+        "details": "The property \"asset\" is required here"
+      }
+    ]
+  },
+  "request": {
+    "url": "https://api.contentful.com/spaces/7w0ig65ffuy4/environments/feature-1/entries/amelias-core-concept-hoodie/published",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/3.4.7; feature space-migration; sdk contentful-management-plain.js/11.36.1; platform node.js/v16.20.2; os Windows/v16.20.2;",
+      "CF-Sequence": "302e0a75-9001-411b-b396-3a5ceafa51da",
+      "Authorization": "Bearer ...OTxTE",
+      "X-Contentful-Version": "1",
+      "X-Contentful-Content-Type": "mediaWrapper",
+      "User-Agent": "axios/1.7.7",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put"
+  },
+  "requestId": "f806d4ab-4695-474c-a4bc-607a6b24cc5e"
+}
+    at errorHandler (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-management\dist\contentful-management.node.js:18452:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RestAdapter.makeRequest (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-management\dist\contentful-management.node.js:4414:12)
+    at async Task.task (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-migration\built\bin\cli.js:189:29)
+    at async Task.run (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\listr2\dist\lib\task.js:213:21)
+    at async C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\listr2\node_modules\p-map\index.js:57:22VersionMismatch: {
+  "status": 409,
+  "statusText": "Conflict",
+  "message": "",
+  "details": {},
+  "request": {
+    "url": "https://api.contentful.com/spaces/7w0ig65ffuy4/environments/feature-1/entries/jims-legendary-coffee-mug",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/3.4.7; feature space-migration; sdk contentful-management-plain.js/11.36.1; platform node.js/v16.20.2; os Windows/v16.20.2;",
+      "CF-Sequence": "302e0a75-9001-411b-b396-3a5ceafa51da",
+      "Authorization": "Bearer ...OTxTE",
+      "X-Contentful-Version": "0",
+      "X-Contentful-Content-Type": "mediaWrapper",
+      "User-Agent": "axios/1.7.7",
+      "Content-Length": "371",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put",
+    "payloadData": "{\"sys\":{\"id\":\"jims-legendary-coffee-mug\",\"version\":0,\"contentType\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"ContentType\",\"id\":\"mediaWrapper\"}}},\"fields\":{\"internalName\":{\"en-US\":\"jims-legendary-coffee-mug\"},\"title\":{\"en-US\":\"jims-legendary-coffee-mug\"},\"altText\":{\"en-US\":\"no altText\"},\"asset\":{\"en-US\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Asset\",\"id\":\"4KLpxtqb8Lv4WIVjPF3JVS\"}}}}}"
+  },
+  "requestId": "a2bc8cfd-8fb7-4975-9779-daf6940b8334"
+}
+    at errorHandler (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-management\dist\contentful-management.node.js:18452:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RestAdapter.makeRequest (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-management\dist\contentful-management.node.js:4414:12)
+    at async Task.task (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-migration\built\bin\cli.js:189:29)
+    at async Task.run (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\listr2\dist\lib\task.js:213:21)
+    at async C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\listr2\node_modules\p-map\index.js:57:22InvalidEntry: {
+  "status": 422,
+  "statusText": "Unprocessable Entity",
+  "message": "Validation error",
+  "details": {
+    "errors": [
+      {
+        "name": "required",
+        "path": [
+          "fields",
+          "asset"
+        ],
+        "details": "The property \"asset\" is required here"
+      }
+    ]
+  },
+  "request": {
+    "url": "https://api.contentful.com/spaces/7w0ig65ffuy4/environments/feature-1/entries/jims-legendary-coffee-mug/published",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/3.4.7; feature space-migration; sdk contentful-management-plain.js/11.36.1; platform node.js/v16.20.2; os Windows/v16.20.2;",
+      "CF-Sequence": "302e0a75-9001-411b-b396-3a5ceafa51da",
+      "Authorization": "Bearer ...OTxTE",
+      "X-Contentful-Version": "1",
+      "X-Contentful-Content-Type": "mediaWrapper",
+      "User-Agent": "axios/1.7.7",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put"
+  },
+  "requestId": "d8a2d32a-356d-4a35-aae6-9fd1cd4a2e8f"
+}
+    at errorHandler (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-management\dist\contentful-management.node.js:18452:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RestAdapter.makeRequest (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-management\dist\contentful-management.node.js:4414:12)
+    at async Task.task (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\contentful-migration\built\bin\cli.js:189:29)
+    at async Task.run (C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\listr2\dist\lib\task.js:213:21)
+    at async C:\Users\marina.crespo\AppData\Roaming\nvm\v16.20.2\node_modules\contentful-cli\node_modules\listr2\node_modules\p-map\index.js:57:22

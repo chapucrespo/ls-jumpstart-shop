@@ -21,32 +21,32 @@ module.exports = function(migration) {
                 if (slug) {
                     return slug;
                 }
-            } catch (error) {}
+            } catch (error) {
+                console.error("Error in identityKey:", error);
+            }
         },
         transformEntryForLocale: function(fromFields, currentLocale) {
-            // fromFields is the product fields.
-
             try {
-                const oldImageId = _.get(fromFields, "image['en-US'].sys.id"); // id of existing image
-
+                const oldImageId = _.get(fromFields, "image['en-US'].sys.id");
                 const slug = _.get(fromFields, "slug['en-US']");
 
                 if (oldImageId && slug) {
                     const derivedAsset = {
                         sys: { type: "Link", linkType: "Asset", id: oldImageId },
-                    }; //new asset with image id (oldImageId)
+                    };
 
-                    let returnedObject = {};
-                    returnedObject.internalName = slug;
-                    returnedObject.title = slug;
-                    returnedObject.altText = "no altText"; // laziness :)
-                    returnedObject.asset = derivedAsset;
-
-                    return returnedObject;
+                    return {
+                        internalName: slug,
+                        title: slug,
+                        altText: "no altText",
+                        asset: derivedAsset,
+                    };
+                } else {
+                    console.warn("Missing image or slug for entry. Skipping transformation.");
+                    return false;
                 }
-
-                return false;
             } catch (error) {
+                console.error("Error in transformEntryForLocale:", error);
                 return false;
             }
         },
